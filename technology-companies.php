@@ -47,5 +47,12 @@ $companies = [
 
 ksort($companies);
 var_dump($companies);
-echo "Question Three\n";
-
+echo "Number Three\n";
+foreach ($companies as $key => $company) {
+    sort($company);
+    $companies[$key] = $company;
+}
+var_dump($companies);
+echo "Number Four\n";
+arsort($companies);
+var_dump($companies);
