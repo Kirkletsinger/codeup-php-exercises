@@ -48,11 +48,12 @@ $companies = [
 ksort($companies);
 var_dump($companies);
 echo "Number Three\n";
-foreach ($companies as $key => $company) {
-    sort($company);
-    $companies[$key] = $company;
+foreach ($companies as $key => $people) {
+    sort($people);
+    $companies[$key] = $people;
 }
 var_dump($companies);
 echo "Number Four\n";
 arsort($companies);
 var_dump($companies);
+
