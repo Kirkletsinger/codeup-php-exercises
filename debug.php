@@ -38,7 +38,7 @@ foreach ($orders as $order) {
 foreach ($orders as $index => $order) {
     // if the order is not for delivery skip it
     if (! $order['delivery']) {
-        continue;
+        
     }
     // human friendly order number
     $orderNumber = $index + 1;

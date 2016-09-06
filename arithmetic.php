@@ -23,7 +23,7 @@ function multiply($a, $b){
     if(is_numeric($a)&& is_numeric($b)){
     	return $a * $b;
 	}else{
-		return "ERROR: Both arguments must be numbers\n";
+		return throwErrorMessage("");
 	}
 }
 function divide($a, $b){
@@ -52,6 +52,5 @@ function Test($a,$b)
 	echo '10 * 30 = ' . multiply(10, 30) . PHP_EOL;
 	echo '10 / 0 = ' . divide(10, 0) . PHP_EOL; 
 	echo '6 % 12 =' .modulus(6, 12) . PHP_EOL;
-	}
-}
+
 
