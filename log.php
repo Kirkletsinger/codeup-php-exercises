@@ -16,11 +16,11 @@ class Log
     }
     public function info($message)
     {
-        $this->logMessage('INFO', $message);.PHP_EOL;
+        $this->logMessage('INFO', $message);
     }
     public function error($message) 
     {
-        $this->logMessage('ERROR', $message);.PHP_EOL;
+        $this->logMessage('ERROR', $message);
     }
     public function __destruct() 
     {
